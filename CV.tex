@@ -1,0 +1,211 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+%
+% (c) 2012 Scott Clark <sc932@cornell.edu> cam.cornell.edu/~sc932
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Charu Bansal} 
+&  Ph: +91 8447035998 \\
+Undergrad, Computer Science and Engineering
+& \href{ charubansal102@gmail.com}\\
+Indira Gandhi Delhi Technical University for Women \\
+\end{tabular*}
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\ressubheading{Indira Gandhi Delhi Technical University for Women}{Delhi, India}{Bachelor of Technology}{2013 - 2017 (expected)}
+
+\ \\
+Percentage - 82.479 (updated on August 2015)
+
+\ \\
+
+\ressubheading{St.George's School,Alaknanda}{Delhi, India}{}{}
+
+\ \\
+12th Percentage - 93.1    (2013)
+\ \\
+10th CGPA - 10   (2011)
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Courses Taken (updated in August 2015)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tabbing}
+Computer Architecture \hspace{1.5cm}\= Data Structures  \hspace{1.5cm}\= Object Oriented Software Engineering \\
+
+Object Oriented Programming \>  Discrete Mathematics\> Analysis and Design of Algorithms   \\
+Applied Mathematics \> Introduction to Computers and Programming in C \\ Database Management Systems \> Advanced Engineering Mathematics \\ Operating Systems \\
+HTML 5 and CSS 3\textsuperscript{\#}{\*}
+\> Python Programming\textsuperscript{\#} \>  
+\end{tabbing}
+\vspace{-0.5cm}
+\hspace{12.5cm} 
+\footnotesize{
+
+\textsuperscript{\#}Online Courses at Codecademy.com and Udemy.com
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Projects (updated on August 2015}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+
+\item
+\ressubheading{Witty Ceaser , The Smart Waste Manager}{IGDTUW Delhi}{proposed for Summer Training Program - 6}{Summer 2015}
+\begin{itemize}
+\item Trash bin with automatic door opening on sensing motion
+\item Send the status of filled trash bins to the Municipality, along with the bin-id (SIM number)
+\item Compute shortest path to traverse all the bins, for efficient fuel utilisation, and send this path to the municipality truck driver
+\end{itemize}
+
+
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Honors and Achievements}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+\item Secured \textbf{College Rank 1} in offsite round of \textbf{DCL- Delhi Coding League}
+\item Secured \textbf{Second position} in Summer Training Program -6 for the project \textbf{Witty Ceaser}
+\item Received \textbf{Scholar Badge} for securing above 90\% marks consecutively for 11 years in school.
+\item Mathematics Board Topper in school (99 marks)
+
+\end{itemize}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Work Experience and Responsibilities Undertaken}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+\item 
+\ressubheading{Sounds of Silence- NGO}{summer of 2015 - present}{}{}
+Web development and SEO intern\
+\\
+\item
+\ressubheading{Tremors- Annual Technical Fest}{CSI IGDTUW chapter}{}{}
+\textbf{2014 - 2015}\
+\\
+Associate, Website and Web Development Team\
+ \\
+Head Coordinator, Formal Events
+\ \\
+\textbf{2013 - 2014}\
+\\
+Head Coordinator , Website and Web Development Team\
+\\
+Head Coordinator, Informal Events
+
+
+\item
+\ressubheading{CodeBenders}{CodeChef IGDTUW Campus Chapter}{Head Coordinator of Website and Web Presence Team}{2014 - present}
+\vspace{1.5mm}
+\item
+\ressubheading{Taarangana}{Cultural Fest,IGDTUW}{Head Coordinator , Publicity Team}{2013 - 2014}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Designing and Coding  Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tabular*}{5in}{l@{\extracolsep{\fill}}l}
+\bf Online Judge}
+& \begin{itemize}
+\item codechef - charubansal12
+\item , spoj - charu12
+\end{itemize}\\[2pt]
+{\bf Extensive}
+& \textsc{C}, C++\\[2pt]
+{\bf Intermediate}
+& \textsc{html5}, \textsc{css3}\\[2pt]
+{\bf Basic}
+& \textsc{Python}, \textsc{SQL}\\[2pt]
+{\bf Operating Systems}
+& \textsc{Linux},\textsc{Windows}\\[2pt]
+{\bf Hardware}
+& \textsc{Raspberry Pi}
+\end{tabular*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Other Interests}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+\item I have keen interest in studying about space-time continuum  and the concepts of time-travel. I also write a blog: \href{https://metyro.blogspot.com}{Tyro}.
+\item I love listening to slow songs and watching movies.
+\item I also like reading and talking also.
+\end{itemize}
+
+\end{document}
